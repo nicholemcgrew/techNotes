@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express.Router()
-const usersController = require('../controllers/notesController')
+const notesController = require('../controllers/notesController')
 
 router.route('/')
     .get(notesController.getAllNotes)
@@ -8,4 +8,4 @@ router.route('/')
     .patch(notesController.updateNote)
     .delete(notesController.deleteNote)
 
-    module.exports = router
+module.exports = router
